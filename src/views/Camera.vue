@@ -2,7 +2,11 @@
   <div class="d-flex flex-column flex-grow-1 overflow-hidden">
     <div class="position-relative d-flex flex-column flex-grow-1 overflow-hidden">
       <section class="video-stage">
-        <!-- <img class=""> -->
+        <!-- TODO -->
+        <iframe 
+          src="http://192.168.137.139:8889/cam?controls=false" 
+          class="w-100 h-100"
+        ></iframe>
         <div class="video-top-gradient"></div>
         <div class="position-absolute top-0 start-0 end-0 d-flex align-items-start justify-content-between p-3">
           <div class="d-flex align-items-center gap-2">
@@ -85,3 +89,6 @@
     </div>
   </div>
 </template>
+
+<script setup>
+</script>
