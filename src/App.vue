@@ -1,6 +1,6 @@
 <template>
   <BApp>
-    <div class="app-frame">
+    <div class="app-frame" data-bs-theme="dark">
       <RouterView />
       <nav aria-label="Main navigation" class="bottom-nav">
         <router-link to="/" class="text-decoration-none">

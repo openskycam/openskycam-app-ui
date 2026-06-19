@@ -10,9 +10,9 @@
         <div class="video-top-gradient"></div>
         <div class="position-absolute top-0 start-0 end-0 d-flex align-items-start justify-content-between p-3">
           <div class="d-flex align-items-center gap-2">
-            <button type="button" aria-label="Camera connected" class="glass-chip d-inline-flex align-items-center gap-2 px-3 py-1 border-0">
+            <!-- <button type="button" aria-label="Camera connected" class="glass-chip d-inline-flex align-items-center gap-2 px-3 py-1 border-0">
               <span class="small fw-medium">1280x720 · 30fps</span>
-            </button>
+            </button> -->
           </div>
           <div style="pointer-events: auto;">
             <button type="button" aria-label="Camera connected" class="glass-chip d-inline-flex align-items-center gap-2 px-3 py-1 border-0">
@@ -29,7 +29,7 @@
           </span>
         </button>
       </section>
-      <nav aria-label="Camera controls" class="d-flex align-items-center justify-content-around px-4 py-4" style="background: rgba(28, 33, 40, 0.6); backdrop-filter: blur(12px);">
+      <nav aria-label="Camera controls" class="d-flex align-items-center justify-content-around px-4 py-4 bg-secondary">
         <button type="button" class="btn border-0 d-flex flex-column align-items-center gap-2 p-0">
           <div class="icon-tile p-3" style="background-color: var(--bs-secondary-bg);">
             <IBiCamera width="20px" height="20px" />
