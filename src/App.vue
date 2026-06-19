@@ -1,9 +1,9 @@
 <template>
   <BApp>
-    <div class="app-frame" data-bs-theme="dark">
+    <div class="app-frame">
       <RouterView />
       <nav aria-label="Main navigation" class="bottom-nav">
-        <router-link to="/" class="text-decoration-none">
+        <router-link to="/" class="text-decoration-none" active-class="active-link">
           <button type="button" aria-current="page" class="nav-btn active">
             <span class="nav-icon">
               <IBiHouseDoor />
@@ -11,7 +11,7 @@
             <span class="small fw-medium" style="font-size:0.6875rem">Home</span>
           </button>
         </router-link>
-        <router-link to="/camera" class="text-decoration-none">
+        <router-link to="/camera" class="text-decoration-none" active-class="active-link">
           <button type="button" class="nav-btn">
             <span class="nav-icon">
               <IBiCameraVideo />
@@ -19,7 +19,7 @@
             <span class="small fw-medium" style="font-size:0.6875rem">Camera</span>
           </button>
         </router-link>
-        <router-link to="/gallery" class="text-decoration-none">
+        <router-link to="/gallery" class="text-decoration-none" active-class="active-link">
           <button type="button" class="nav-btn">
             <span class="nav-icon">
               <IBiImages />
@@ -78,11 +78,11 @@ import { BApp } from 'bootstrap-vue-next';
   transition: all 0.2s ease;
 }
 
-.bottom-nav .nav-btn.active {
+.bottom-nav .active-link .nav-btn {
   color: var(--bs-primary);
 }
 
-.bottom-nav .nav-btn.active .nav-icon {
+.bottom-nav .active-link .nav-btn .nav-icon {
   background: rgba(47, 128, 237, 0.15);
 }
 

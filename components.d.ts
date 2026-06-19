@@ -15,8 +15,10 @@ declare module 'vue' {
     IBiArrowRepeat: typeof import('~icons/bi/arrow-repeat')['default']
     IBiBarChartLineFill: typeof import('~icons/bi/bar-chart-line-fill')['default']
     IBiBattery: typeof import('~icons/bi/battery')['default']
+    IBiBatteryFull: typeof import('~icons/bi/battery-full')['default']
     IBiCamera: typeof import('~icons/bi/camera')['default']
     IBiCameraVideo: typeof import('~icons/bi/camera-video')['default']
+    IBiCameraVideoOff: typeof import('~icons/bi/camera-video-off')['default']
     IBiCircleFill: typeof import('~icons/bi/circle-fill')['default']
     IBiClock: typeof import('~icons/bi/clock')['default']
     IBiDisplay: typeof import('~icons/bi/display')['default']
@@ -28,6 +30,7 @@ declare module 'vue' {
     IBiPlayFill: typeof import('~icons/bi/play-fill')['default']
     IBiSpeedometer: typeof import('~icons/bi/speedometer')['default']
     IBiWifi: typeof import('~icons/bi/wifi')['default']
+    IBiWifiOff: typeof import('~icons/bi/wifi-off')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
