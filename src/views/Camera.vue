@@ -44,7 +44,12 @@
         </div>
       </section>
       <nav aria-label="Camera controls" class="d-flex align-items-center justify-content-around px-4 py-4 bg-body-secondary bg-opacity-25">
-        <button type="button" class="btn border-0 d-flex flex-column align-items-center gap-2 p-0" :disabled="!isWifiEnabled || !isWifiConnected">
+        <button
+          type="button"
+          class="btn border-0 d-flex flex-column align-items-center gap-2 p-0"
+          :disabled="!isWifiEnabled || !isWifiConnected"
+          @click="capturePhoto"
+        >
           <div class="icon-tile p-3" style="background-color: var(--bs-secondary-bg);">
             <IBiCamera width="20px" height="20px" />
           </div>
@@ -57,6 +62,7 @@
 
 <script setup>
 import { computed } from 'vue';
+import { api } from '@/api/client';
 
 const cameraUrl = computed(() => {
   return import.meta.env.VITE_CAMERA_URL;
@@ -69,4 +75,10 @@ const isWifiEnabled = computed(() => {
 const isWifiConnected = computed(() => {
   return true;
 });
+
+const capturePhoto = async () => {
+  const data = await api.post('http://192.168.137.139:5000/api/camera/capture');
+
+  console.log(data);
+}
 </script>
