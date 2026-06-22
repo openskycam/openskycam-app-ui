@@ -20,3 +20,7 @@
     </div>
   </div>
 </template>
+
+<script setup>
+//alert(app.getPath('userData'))
+</script>
